@@ -2,10 +2,12 @@ import React from "react";
 import { BrowserRouter, Routes, Route, NavLink, Navigate } from "react-router-dom";
 
 import "./App.css";
+import "./styles/componentes.css";
 
 import Biblioteca from "./pages/Biblioteca";
 import Lista from "./pages/Lista";
 import Estadisticas from "./pages/Estadisticas";
+import './services/api'
 
 function App() {
   return (
@@ -24,23 +26,6 @@ function App() {
           </NavLink>
         </nav>
       </header>
-
-      <section className="filtros">
-        <input type="text" placeholder="Buscar juegos..." className="input-buscar" />
-        <select className="select">
-          <option>Todas las plataformas</option>
-          <option>PC</option>
-          <option>PlayStation</option>
-          <option>Xbox</option>
-          <option>Nintendo</option>
-        </select>
-        <select className="select">
-          <option>Más recientes</option>
-          <option>Más antiguos</option>
-          <option>Alfabéticamente</option>
-        </select>
-        <button className="btn-agregar">+ Agregar Juego</button>
-      </section>
 
       <main>
         <Routes>

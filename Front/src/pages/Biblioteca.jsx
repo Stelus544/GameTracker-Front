@@ -1,8 +1,9 @@
-import React from "react";
 import BibliotecaJuegos from "../components/BibliotecaJuegos";
 
-export default function Biblioteca () {
-    return(
-        <BibliotecaJuegos></BibliotecaJuegos>
-    )
+export default function Biblioteca() {
+  return (
+    <div className="biblioteca">
+      <BibliotecaJuegos />
+    </div>
+  );
 }

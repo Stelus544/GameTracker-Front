@@ -30,7 +30,7 @@ export default function EstadisticasPersonales() {
 		<div>
 			<h2>Estadísticas Personales</h2>
 			{estadisticas ? (
-				<div className="estadisticas-container">
+				<div className="estadisticas-grid">
 					<div className="stat-card">
 						<h3>Total de Juegos</h3>
 						<p className="stat-number">{estadisticas.totalJuegos}</p>
